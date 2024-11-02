@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button">
-        <item name="android:background">@drawable/custom_button</item>
+    <style name="RollButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/roll_button_background</item>
+        ... other style attributes ...
+    </style>
+
+    <style name="DisplayTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/display_text_color</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="DiceBoxStyle">
+        <item name="android:background">@drawable/dice_box_drawable</item>
+        <item name="android:paddingEnd">40dp</item>
+        <item name="android:paddingStart">40dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">40dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
     </style>
 </resources>

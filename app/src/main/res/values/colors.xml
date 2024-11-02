@@ -2,5 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFF</color>
-    <color name="red">#85CD0A0A</color>
+    <color name="background_color">#FF000000</color>
+    <color name="dice_box_background_color">#86706D6D</color>
+    <color name="roll_button_color">#FBB80404</color>
+    <color name="display_text_color">#FBF8DC0D</color>
 </resources>

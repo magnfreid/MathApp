@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
         rollButton = findViewById(R.id.rollButton)
         display = findViewById(R.id.displayTextView)
+
         val diceImageViews = listOf<ImageView>(
             findViewById(R.id.dice1ImageView),
             findViewById(R.id.dice2ImageView),
