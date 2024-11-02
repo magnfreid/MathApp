@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Dice Game</string>
+    <string name="display">Roll will be displayed here</string>
+    <string name="d20ButtonText">D20</string>
+    <string name="d6ButtonText">D6</string>
+    <string name="rollButtonText">Roll</string>
+    <string name="diceEditTextHint">Sides</string>
+    <string name="displayText">Make a roll!</string>
 </resources>
