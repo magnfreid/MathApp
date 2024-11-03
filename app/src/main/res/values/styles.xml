@@ -1,14 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
 
-    <style name="RollButtonStyle" parent="Widget.AppCompat.Button">
-        <item name="android:background">@drawable/roll_button_background</item>
-        ... other style attributes ...
+    <resources>
+
+    <style name="RollButtonStyle" parent="Widget.Material3.Button.ElevatedButton.Icon" >
+        <item name="icon">@drawable/dice_icon</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:backgroundTint">@color/roll_button_color</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/white</item>
+        <item name="iconSize">40dp</item>
     </style>
 
-    <style name="DisplayTextStyle" parent="Widget.AppCompat.TextView">
+    <style name="DisplayStyle" parent="Widget.Material3.AutoCompleteTextView.OutlinedBox">
+        <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/display_text_color</item>
-        <item name="android:textSize">34sp</item>
     </style>
 
     <style name="DiceBoxStyle">
@@ -20,4 +27,5 @@
         <item name="android:layout_marginStart">20dp</item>
         <item name="android:layout_marginEnd">20dp</item>
     </style>
+
 </resources>

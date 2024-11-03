@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/background"
+        android:src="@drawable/background_old"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="48dp" />
 
@@ -32,9 +32,9 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.238">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/displayTextView"
-            style="@style/DisplayTextStyle"
+            style="@style/DisplayStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/displayText"
@@ -101,7 +101,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/rollButton"
         style="@style/RollButtonStyle"
         android:layout_width="wrap_content"
