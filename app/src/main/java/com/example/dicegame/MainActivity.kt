@@ -2,8 +2,12 @@ package com.example.dicegame
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var rollButton: Button
     private lateinit var display: TextView
+    private lateinit var progressBar: ProgressBar
     private val dice = Dice()
     private val diceRolls = mutableListOf<Int>()
 
@@ -31,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         }
         rollButton = findViewById(R.id.rollButton)
         display = findViewById(R.id.displayTextView)
+        progressBar = findViewById(R.id.progressBar)
 
         val diceImageViews = listOf<ImageView>(
             findViewById(R.id.dice1ImageView),
@@ -49,14 +55,28 @@ class MainActivity : AppCompatActivity() {
             ResourcesCompat.getDrawable(resources, R.drawable.dice_6, null)
         )
 
+
+
         rollButton.setOnClickListener {
+            progressBar.visibility = View.VISIBLE
+            display.visibility = View.GONE
+            rollButton.isEnabled = false
             for (diceImageView in diceImageViews) {
-                val roll = dice.rollD6()
-                diceRolls.add(roll)
-                diceImageView.setImageDrawable(diceImages[roll - 1])
+                diceImageView.visibility = View.INVISIBLE
             }
-            display.text = checkRolls()
-            diceRolls.clear()
+            Handler(Looper.getMainLooper()).postDelayed({
+                rollButton.isEnabled = true
+                progressBar.visibility = View.GONE
+                for (diceImageView in diceImageViews) {
+                    val roll = dice.rollD6()
+                    diceRolls.add(roll)
+                    diceImageView.setImageDrawable(diceImages[roll - 1])
+                    diceImageView.visibility = View.VISIBLE
+                }
+                display.visibility = View.VISIBLE
+                display.text = checkRolls()
+                diceRolls.clear()
+            }, 1000)
         }
 
 

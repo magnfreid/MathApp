@@ -7,6 +7,7 @@
     <color name="white">#FFFFFF</color>
     <color name="background_color">#FF000000</color>
     <color name="dice_box_background_color">#DD141414</color>
-    <color name="roll_button_color">#B91C37</color>
+    <color name="roll_button_color">#8F0505</color>
+    <color name="track_color">#BD9A9A</color>
     <color name="display_text_color">#FBF8DC0D</color>
 </resources>

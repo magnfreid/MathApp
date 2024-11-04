@@ -32,6 +32,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.238">
 
+        <com.google.android.material.progressindicator.CircularProgressIndicator
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:visibility="gone"
+            app:indicatorColor="@color/roll_button_color"
+            app:trackColor="@color/track_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/displayTextView"
             style="@style/DisplayStyle"
@@ -46,8 +59,7 @@
 
         <ImageView
             android:id="@+id/dice2ImageView"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            style="@style/DiceImageViewStyle"
             android:layout_marginTop="152dp"
             app:layout_constraintEnd_toStartOf="@+id/dice3ImageView"
             app:layout_constraintHorizontal_bias="0.5"
@@ -57,8 +69,7 @@
 
         <ImageView
             android:id="@+id/dice3ImageView"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            style="@style/DiceImageViewStyle"
             android:layout_marginTop="152dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -68,8 +79,7 @@
 
         <ImageView
             android:id="@+id/dice1ImageView"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            style="@style/DiceImageViewStyle"
             android:layout_marginTop="152dp"
             app:layout_constraintEnd_toStartOf="@+id/dice2ImageView"
             app:layout_constraintHorizontal_bias="0.5"
@@ -79,8 +89,7 @@
 
         <ImageView
             android:id="@+id/dice4ImageView"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            style="@style/DiceImageViewStyle"
             android:layout_marginTop="52dp"
             app:layout_constraintEnd_toStartOf="@+id/dice5ImageView"
             app:layout_constraintHorizontal_bias="0.5"
@@ -90,8 +99,7 @@
 
         <ImageView
             android:id="@+id/dice5ImageView"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            style="@style/DiceImageViewStyle"
             android:layout_marginTop="52dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
