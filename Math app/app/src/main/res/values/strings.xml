@@ -10,4 +10,5 @@
     <string name="mixed">Mixed</string>
     <string name="btn_continue_text">Continue</string>
     <string name="tv_question_amount">How many questions do you want?</string>
+    <string name="unanswered">UNANSWERED</string>
 </resources>
