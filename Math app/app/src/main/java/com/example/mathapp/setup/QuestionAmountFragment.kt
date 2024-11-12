@@ -22,7 +22,9 @@ class QuestionAmountFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        val questionString =
+            binding.tvAmount.text.toString() + " (${Setup.MIN_AMOUNT}-${Setup.MAX_AMOUNT})"
+        binding.tvAmount.text = questionString
         binding.btnQuestionAmount.setOnClickListener {
             val amount = binding.etAmount.text.toString().toInt()
             if (amount in Setup.MIN_AMOUNT..Setup.MAX_AMOUNT) {
