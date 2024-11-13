@@ -11,4 +11,5 @@
     <string name="btn_continue_text">Continue</string>
     <string name="tv_question_amount">How many questions do you want?</string>
     <string name="unanswered">UNANSWERED</string>
+    <string name="welcome_to_the_math_app_let_s_do_some_math_practice">Welcome to the Math App! Let\'s do some math practice!</string>
 </resources>

@@ -8,10 +8,11 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_amount"
+        style="@style/TextGeneralStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv_question_amount"
-        android:textSize="16sp"
+
         app:layout_constraintBottom_toTopOf="@+id/et_amount"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

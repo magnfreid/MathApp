@@ -1,5 +1,6 @@
 package com.example.mathapp
 
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -34,11 +35,24 @@ class QuestionsActivity : AppCompatActivity() {
         } else {
             intent.getSerializableExtra("questions") as List<QuestionItem>
         }
+        Log.d("SERIALIZABLE FETCHED", "${intent.extras}")
 
         Log.d("QUESTIONS FETCHED", "$questions")
         binding.rvQuestions.layoutManager = LinearLayoutManager(this)
-        binding.rvQuestions.adapter = QuestionsAdapter(questions)
+        binding.rvQuestions.adapter = QuestionsAdapter(questions, this)
+        binding.btnSubmit.setOnClickListener{
+            submit(questions)
+        }
+    }
 
+    private fun submit(questions: List<QuestionItem>) {
+        val newIntent = Intent(this, ResultsActivity::class.java)
+        newIntent.putExtra("answeredQuestions", questions as ArrayList<QuestionItem>)
+        startActivity(newIntent)
+    }
+
+    fun updateProgressBar(progress:Int){
+        binding.linearProgressIndicator.progress = progress
     }
 }
 

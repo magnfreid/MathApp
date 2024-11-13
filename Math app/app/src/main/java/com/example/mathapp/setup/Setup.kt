@@ -28,7 +28,7 @@ object Setup {
             val question = QuestionItem(
                 num1, num2,
                 operator,
-                getAnswer(num1, num2, operator),
+                getCorrectAnswer(num1, num2, operator),
                 null
             )
             questions.add(question)
@@ -46,7 +46,7 @@ object Setup {
         return operators[Random.nextInt(operators.size)]
     }
 
-    private fun getAnswer(num1: Int, num2: Int, operator: String): Double {
+    private fun getCorrectAnswer(num1: Int, num2: Int, operator: String): Double {
         return when (operator) {
             ADDITION -> num1.toDouble() + num2.toDouble()
             SUBTRACTION -> num1.toDouble() - num2.toDouble()
