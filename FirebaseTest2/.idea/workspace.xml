@@ -22,11 +22,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce9c62b2-7136-4e7d-9309-697ca4602e23" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/java/com/example/firebasetodo2/AppViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/java/com/example/firebasetodo2/Todo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/java/com/example/firebasetodo2/TodoRVAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/res/layout/todo_item.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FireBaseTodo2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FireBaseTodo2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FireBaseTodo2/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../FireBaseTodo2/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/java/com/example/firebasetodo2/FirebaseManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/java/com/example/firebasetodo2/FirebaseManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/java/com/example/firebasetodo2/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/java/com/example/firebasetodo2/LoginActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/java/com/example/firebasetodo2/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/java/com/example/firebasetodo2/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/java/com/example/firebasetodo2/MainViewModel.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/res/layout/activity_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/res/layout/activity_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FireBaseTodo2/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../FireBaseTodo2/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../FireBaseTodo2/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
